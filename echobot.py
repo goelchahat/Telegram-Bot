@@ -232,9 +232,9 @@ def cricket(chat_id, update_id):
 
 
 def welcome_note(chat_id, commands):
-    text = "Bot Welcomes You"
+    text = "Hey! What do you need?"
     send_message(chat_id, text)
-    text = 'Select'
+    text = 'Select whatever you like'
     reply_markup = reply_markup_maker(commands)
     send_message(chat_id, text, reply_markup)
 
