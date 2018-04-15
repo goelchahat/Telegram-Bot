@@ -247,7 +247,7 @@ def start(chat_id):
     chat_id, text, update_id = get_last_id_text(get_updates())
     while (text.lower() != 'start'):
         chat_id, text, update_id = get_last_id_text(get_updates(update_id + 1))
-        sleep(0.5)
+        sleep(0.3)
 
     return chat_id, text, update_id
 
